@@ -1,0 +1,17 @@
+/* Basic styling for Unblocked Games */
+:root{
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --accent:#1e90ff;
+  --text:#0b2545;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:var(--text);}
+header{background:linear-gradient(90deg,var(--accent),#3cb0fd);color:white;padding:1rem 1.25rem}
+header h1{margin:0;font-size:1.25rem}
+main{max-width:900px;margin:2rem auto;padding:0 1rem}
+#games-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.game-card{background:var(--card);padding:0.75rem;border-radius:8px;box-shadow:0 6px 18px rgba(11,37,69,0.06);display:flex;flex-direction:column;gap:0.5rem}
+.game-card a{color:var(--accent);font-weight:600;text-decoration:none}
+.game-card p{margin:0;color:#475569;font-size:0.95rem}
+.footer{margin-top:2rem;color:#64748b;font-size:0.9rem;text-align:center}
